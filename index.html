@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    
+    <header>
+        <div class="box">
+            <div class="logo-box">
+                <div class="img"></div>
+                <h1 id="title">Loading...</h1>
+            </div>
+
+            <form action="" id="survey-form">
+                <div id="name-box">
+                    <div class="fname-box names">
+                        <label for="fname" id="name-label">First Name</label><br>
+                        <input type="text" name="fname" id="name" placeholder="First Name">
+                    </div>
+                    <div class="lname-box names">
+                        <label for="lname" id="lname-label">Last Name</label><br>
+                        <input type="text" name="lname" id="name" class="lname" placeholder="Last Name">
+                    </div>
+                </div>
+                <br>
+                <div id="name-box">
+                    <div class="fname-box names">
+                        <label for="email" id="email-label">Email</label><br>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="lname-box names">
+                        <label for="number" id="number-label">Age</label><br>
+                        <input type="number" name="number" id="Age" min="1" max="15" placeholder="Age">
+                    </div>
+                </div>
+
+                <div id="dropdown">
+                    <label for="membership" >Choose a membership plan:</label>
+                        <select name="membership" id="membership">
+                            <option value="free">Free</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver" selected>Silver</option>
+                            <option value="Gold">Gold</option>
+                        </select>
+                </div>
+
+                <p class="description">choose a skill</p>
+                <div class="all-check">
+                    <div class="right">
+                        <div class="gdesign check">
+                            <input type="checkbox" name="graphicdesign" id="graphic" value="graphic Designing">
+                            <label for="graphicdesign">Graphic Designing</label><br>
+                        </div>
+                        <div class="web check">
+                            <input type="checkbox" name="Webdesign" id="Web">
+                            <label for="Webdesign">Web Designing</label><br>
+                        </div>
+                        <div class="photo check">
+                            <input type="checkbox" name="photography" id="photo">
+                            <label for="photo">Photography</label><br>
+                        </div>
+                        <div class="art check">
+                            <input type="checkbox" name="art" id="art">
+                            <label for="art">Art</label><br>
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="typing check">
+                            <input type="checkbox" name="typing" id="typing">
+                            <label for="typing">Typing</label><br>
+                        </div>
+                        <div class="story check">
+                            <input type="checkbox" name="story" id="">
+                            <label for="story">Storywriting</label><br>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" id="Btn">Submit</button>
+            </form>
+
+            
+        </div>
+    </header>
+
+</body>
+</html>
